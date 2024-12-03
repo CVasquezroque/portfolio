@@ -1,0 +1,37 @@
+---
+import Badge from './Badge.astro';
+import SocialPill from './SocialPill.astro';
+import LinkedInIcon from './icons/LinkedInIcon.astro';
+import MailIcon from './icons/MailIcon.astro';
+---
+
+<div class="max-w-xl text-center mx-auto">
+    <div class="flex gap-4 mb-4 justify-center">
+      <img
+        class="rounded-full shadow-lg w-16 h-16"
+        src="https://avatars.githubusercontent.com/u/35357090?v=4"
+        alt={"Carlos Vasquez"}
+      />
+      <Badge>Open to work</Badge>
+    </div>
+    <h1
+      class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+    >
+      Hi, I'm Carlos
+    </h1>
+    <p
+      class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-blue-200 [&>strong]:text-blue-500 [&>strong]:font-semibold dark:text-gray-300"
+    >
+      Biomedical Engineer (B.Sc.) specializing in <strong>computer vision, deep learning</strong>, and <strong>medical applications</strong>. With 2+ years of experience as a developer, I focus on creating innovative solutions that bridge technology and healthcare.
+    </p>
+    <nav class="flex flex-wrap gap-4 mt-8 justify-center">
+      <SocialPill href="mailto:tuemail@example.com">
+        <MailIcon class="size-4" />
+        Contact me
+      </SocialPill>
+      <SocialPill href="https://www.linkedin.com/in/cvasquezroque/">
+        <LinkedInIcon class="size-4" />
+        LinkedIn
+      </SocialPill>
+    </nav>
+  </div>

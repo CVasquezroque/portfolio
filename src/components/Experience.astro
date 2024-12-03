@@ -1,0 +1,29 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+
+const EXPERIENCE = [
+  {
+    date: 'Actualmente...',
+    title: 'Creador de Contenido',
+    company: 'Twitch',
+    description:
+      'Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.',
+    link: 'https://twitch.tv/tu_usuario',
+  },
+  {
+    date: 'Septiembre 2022',
+    title: 'Principal Frontend Engineer',
+    company: 'Adevinta Spain',
+    description:
+      'Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web.',
+  },
+  // Añade más experiencias si lo deseas
+];
+---
+<ol class="relative mt-16">
+  {EXPERIENCE.map((experience) => (
+    <li>
+      <ExperienceItem {...experience} />
+    </li>
+  ))}
+</ol>
